@@ -13,6 +13,10 @@
 
         <option value="">-- Select a Continent --</option>
 
+        <option *ngFor="let region of regions" [value]="region">
+          {{ region }}
+        </option>
+
       </select>
 
     </div>
